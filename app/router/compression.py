@@ -9,7 +9,7 @@ from app.utils.response import responseAPIHelper
 from app.modules.compression_modules import CompressModules
 
 
-mod = Blueprint('blur', __name__, url_prefix='/blur')
+mod = Blueprint('blur', __name__, url_prefix='/compress')
 
 @mod.route('/', methods=['POST'])
 def upload_images():
