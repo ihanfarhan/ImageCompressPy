@@ -42,13 +42,16 @@ class CompressModules:
             "path": path,
             "full_path": os.path.abspath(os.getcwd()) + '/upload/' + path,
         }
-    
-    def run(self):
+
+    def saveImage(self):
         self.BACKGROUND.save(
             self.setterPath().get('full_path'),
             optimize=True,
             quality=0
         )
+    
+    def run(self):
+        self.saveImage()
 
         return {
             "original_image": photos.url(self.DEFAULT_IMAGE),
