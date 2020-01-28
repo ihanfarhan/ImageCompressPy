@@ -44,6 +44,10 @@ class CompressModules:
         }
 
     def saveImage(self):
+        basewidth = 720
+        wpercent = (basewidth / float(self.BACKGROUND.size[0]))
+        hsize = int((float(self.BACKGROUND.size[1]) * float(wpercent)))
+        self.BACKGROUND = self.BACKGROUND.resize((basewidth,hsize), Image.ANTIALIAS)
         self.BACKGROUND.save(
             self.setterPath().get('full_path'),
             optimize=True,
