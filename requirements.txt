@@ -8,7 +8,7 @@ configparser==3.7.4
 entrypoints==0.3
 flake8==3.7.7
 flasgger==0.9.1
-Flask==0.11.1
+Flask==1.0
 Flask-Cors==3.0.2
 Flask-JWT==0.3.2
 Flask-Uploads==0.2.1
